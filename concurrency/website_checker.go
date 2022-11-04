@@ -18,7 +18,7 @@ func CheckWebsites(wc WebsiteChecker, urls []string) map[string]bool {
 	}
 
 	for i := 0; i < len(urls); i++ {
-		r := <- resultChannel
+		r := <-resultChannel
 		results[r.string] = r.bool
 	}
 

@@ -12,10 +12,10 @@ func TestWebsiteChecker(t *testing.T) {
 		"waat://furhurterwe.geds",
 	}
 
-	want := map[string]bool {
-		"http://www.google.com": 		true,
-		"http://blog.gypsydave5.com": 	true,
-		"waat://furhurterwe.geds": 		false,
+	want := map[string]bool{
+		"http://www.google.com":      true,
+		"http://blog.gypsydave5.com": true,
+		"waat://furhurterwe.geds":    false,
 	}
 
 	got := CheckWebsites(MockWebsiteChecker, websites)
